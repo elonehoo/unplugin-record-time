@@ -2,16 +2,16 @@
   "name": "unplugin-record-time",
   "type": "module",
   "version": "0.0.0",
-  "description": "Starter template for unplugin",
-  "author": "Elone Hoo <hi@elonehoo.me>",
+  "description": "Time reporting for Vite/Rollup/Webpack project.",
+  "author": "Elone Hoo <elonehoo@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/elonehoo/starter-unplugin#readme",
+  "homepage": "https://github.com/elonehoo/unplugin-record-time#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elonehoo/starter-unplugin.git"
+    "url": "git+https://github.com/elonehoo/unplugin-record-time.git"
   },
   "bugs": {
-    "url": "https://github.com/elonehoo/starter-unplugin/issues"
+    "url": "https://github.com/elonehoo/unplugin-record-time/issues"
   },
   "keywords": [
     "unplugin",

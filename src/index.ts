@@ -1,7 +1,29 @@
 import { createUnplugin } from 'unplugin'
 import type { Options } from './types'
 
-export default createUnplugin<Options | undefined>((options) => {
+function closeBundleTime(buildEnd: number, build: number, full: number) {
+  const end: Date = new Date()
+  // Catch potential render NPEs
+  try {
+    /* eslint-disable no-console */
+    console.table({
+      build: {
+        time: `${((buildEnd - build) / 1000).toFixed(
+          3,
+        )}s`,
+      },
+      full: {
+        time: `${((end.getTime() - full) / 1000).toFixed(3)}s`,
+      },
+    })
+  }
+  catch (error) {
+    if (error instanceof Error)
+      console.warn(error)
+  }
+}
+
+export default createUnplugin<Options | undefined>(() => {
   const full: Date = new Date()
 
   let build: Date
@@ -15,26 +37,15 @@ export default createUnplugin<Options | undefined>((options) => {
     buildEnd() {
       buildEnd = new Date()
     },
-    writeBundle() {
-      const end: Date = new Date()
-      // Catch potential render NPEs
-      try {
-        /* eslint-disable no-console */
-        console.table({
-          build: {
-            time: `${((buildEnd.getTime() - build.getTime()) / 1000).toFixed(
-              3,
-            )}s`,
-          },
-          full: {
-            time: `${((end.getTime() - full.getTime()) / 1000).toFixed(3)}s`,
-          },
-        })
-      }
-      catch (error) {
-        if (error instanceof Error)
-          console.warn(error)
-      }
+    vite: {
+      closeBundle() {
+        closeBundleTime(buildEnd.getTime(), build.getTime(), full.getTime())
+      },
+    },
+    rollup: {
+      closeBundle() {
+        closeBundleTime(buildEnd.getTime(), build.getTime(), full.getTime())
+      },
     },
   }
 })
