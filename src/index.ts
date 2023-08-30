@@ -47,5 +47,10 @@ export default createUnplugin<Options | undefined>(() => {
         closeBundleTime(buildEnd.getTime(), build.getTime(), full.getTime())
       },
     },
+    webpack(compiler) {
+      compiler.hooks.done.tap('unplugin-record-time', () => {
+        closeBundleTime(buildEnd.getTime(), build.getTime(), full.getTime())
+      })
+    },
   }
 })
