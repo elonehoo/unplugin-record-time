@@ -6,7 +6,6 @@ export default createUnplugin<Options | undefined>((options) => {
 
   let build: Date
   let buildEnd: Date
-  let render: Date
   return {
     name: 'unplugin-record-time',
     apply: 'build',
