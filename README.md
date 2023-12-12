@@ -44,7 +44,6 @@ export default {
 
 <br></details>
 
-
 <details>
 <summary>Webpack</summary><br>
 
@@ -91,5 +90,3 @@ module.exports = {
 ```
 
 <br></details>
-
-
