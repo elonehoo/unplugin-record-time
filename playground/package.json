@@ -11,7 +11,7 @@
     "unplugin-record-time": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^5.0.4",
+    "vite": "^5.0.7",
     "vite-plugin-inspect": "^0.8.1"
   }
 }
