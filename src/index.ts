@@ -1,5 +1,5 @@
-import { createUnplugin } from 'unplugin'
 import type { Options } from './types'
+import { createUnplugin } from 'unplugin'
 
 function closeBundleTime(buildEnd: number, build: number, full: number) {
   const end: Date = new Date()
