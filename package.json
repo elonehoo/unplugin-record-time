@@ -85,15 +85,15 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "unplugin": "^2.3.4"
+    "unplugin": "^2.3.5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.2",
-    "@types/node": "^22.15.21",
+    "@types/node": "^22.15.29",
     "@vitest/ui": "^3.1.4",
     "bumpp": "^10.1.1",
     "chalk": "^5.4.1",
-    "eslint": "^9.27.0",
+    "eslint": "^9.28.0",
     "fast-glob": "^3.3.3",
     "rollup": "^4.41.1",
     "tsup": "^8.5.0",
