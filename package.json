@@ -85,22 +85,22 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "unplugin": "^2.3.5"
+    "unplugin": "^2.3.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.2.1",
-    "@types/node": "^22.17.1",
+    "@types/node": "^22.17.2",
     "@vitest/ui": "^3.2.4",
-    "bumpp": "^10.2.2",
-    "chalk": "^5.5.0",
+    "bumpp": "^10.2.3",
+    "chalk": "^5.6.0",
     "eslint": "^9.33.0",
     "fast-glob": "^3.3.3",
     "rollup": "^4.46.2",
     "tsup": "^8.5.0",
-    "tsx": "^4.20.3",
+    "tsx": "^4.20.4",
     "typescript": "^5.9.2",
-    "vite": "^7.1.1",
+    "vite": "^7.1.2",
     "vitest": "^3.2.4",
-    "webpack": "^5.101.0"
+    "webpack": "^5.101.2"
   }
 }
