@@ -1,2 +1,19 @@
+# CI installs with pnpm `latest` (currently pnpm 12). Its default release-age
+# check rejects lockfile entries published in the last day, so upgrades fail
+# install until those versions age out. Opt out so CI can install them immediately.
+minimumReleaseAge: 0
+minimumReleaseAgeExcludePrune: true
+
+trustPolicy: no-downgrade
+# tsup depends on chokidar 4.0.3, which was published without npm provenance.
+# Later chokidar releases have provenance, so pnpm treats 4.0.3 as a trust downgrade.
+trustPolicyExclude:
+  - chokidar@4.0.3
+
+shellEmulator: true
+
 packages:
   - playground
+
+allowBuilds:
+  esbuild: true
