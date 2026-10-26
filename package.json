@@ -85,7 +85,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "unplugin": "^3.4.0"
+    "unplugin": "^3.5.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^10.0.0",
@@ -96,12 +96,12 @@
     "chalk": "^6.0.1",
     "eslint": "^10.13.0",
     "fast-glob": "^3.3.3",
-    "rollup": "^4.64.12",
+    "rollup": "^4.65.0",
     "tsup": "^8.5.1",
     "tsx": "^4.23.15",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "vite": "^8.3.4",
+    "vite": "^8.3.5",
     "vitest": "^4.1.12",
-    "webpack": "^5.112.0"
+    "webpack": "^5.112.2"
   }
 }
