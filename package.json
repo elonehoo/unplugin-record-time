@@ -96,11 +96,11 @@
     "chalk": "^6.0.1",
     "eslint": "^10.14.0",
     "fast-glob": "^3.3.3",
-    "rollup": "^4.67.4",
+    "rollup": "^4.68.0",
     "tsup": "^8.5.1",
     "tsx": "^4.23.15",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "vite": "^8.3.5",
+    "vite": "^8.3.6",
     "vitest": "^4.1.12",
     "webpack": "^5.112.2"
   }
